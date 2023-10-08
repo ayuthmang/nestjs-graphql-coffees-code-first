@@ -3,7 +3,8 @@
 # ------------------------------------------------------
 
 type Coffee {
-  id: Float!
+  """A unique identifier"""
+  id: ID!
   name: String!
   brand: String!
   flavors: [String!]!
