@@ -42,6 +42,7 @@ export class CoffeesService {
     });
     const newCoffeeEntity = await this.coffeesRepository.save(coffee);
     this.pubSub.publish('coffeeAdded', { coffeeAdded: newCoffeeEntity });
+    return newCoffeeEntity;
   }
 
   async update(id: number, updateCoffeeInput: UpdateCoffeeInput) {
