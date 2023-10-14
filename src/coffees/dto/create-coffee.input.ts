@@ -1,5 +1,6 @@
 import { Field, InputType } from '@nestjs/graphql';
 import { MinLength } from 'class-validator';
+import { CoffeeType } from 'src/common/enums/coffee-type.enum';
 
 @InputType()
 export class CreateCoffeeInput {
@@ -10,4 +11,5 @@ export class CreateCoffeeInput {
   name: string;
   brand: string;
   flavors: string[];
+  type: CoffeeType;
 }
