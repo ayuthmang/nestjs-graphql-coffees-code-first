@@ -22,12 +22,14 @@ type Mutation {
 }
 
 input CreateCoffeeInput {
+  """A new coffee name"""
   name: String!
   brand: String!
   flavors: [String!]!
 }
 
 input UpdateCoffeeInput {
+  """A new coffee name"""
   name: String
   brand: String
   flavors: [String!]
