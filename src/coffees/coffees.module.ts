@@ -9,3 +9,4 @@ import { Coffee } from './entities/coffee.entity';
   providers: [CoffeesResolver, CoffeesService],
 })
 export class CoffeesModule {}
+  
